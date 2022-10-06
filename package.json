@@ -14,8 +14,7 @@
   "gypfile": true,
   "dependencies": {
     "ffi-napi": "^4.0.3",
-    "node-gyp": "^9.2.0",
-    "ref-napi": "^3.0.3"
+    "node-gyp": "^9.2.0"
   },
   "devDependencies": {
     "eslint": "^8.24.0"

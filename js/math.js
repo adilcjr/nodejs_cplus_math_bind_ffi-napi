@@ -1,6 +1,4 @@
 var ffi = require('ffi-napi')
-var ref = require('ref-napi')
-var int = ref.types.int
 
 var platform = process.platform
 var mathlib = null
@@ -16,9 +14,9 @@ if (platform === 'win32') {
 }
 
 var math = ffi.Library(mathlib, {
-  add: [int, [int, int]],
-  minus: [int, [int, int]],
-  multiply: [int, [int, int]]
+  add: ['int', ['int', 'int']],
+  minus: ['int', ['int', 'int']],
+  multiply: ['int', ['int', 'int']]
 })
 
 module.exports = math
